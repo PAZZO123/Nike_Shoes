@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class=" p-10 lg:px-24"> 
+      <!-- Navigation Bars -->
+      <nav class="flex justify-between  flex-wrap">
+      <a href=""><img  class="h-20 w-20" src="Images/nike-logo.svg" alt=""></a>
+      <button id="hide" class=" lg:hidden rounded-lg p-2 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg></button>
+     <!-- Navigation Links -->
+      <div id="block" class="w-full lg:w-auto lg:block hidden">
+        <ul class="bg-gray-50 rounded-lg border border-gray-100 text-lg p-4  flex flex-col lg:flex-row lg:border-none lg:bg-transparent lg:space-x-8 ">
+          <li class="px-3 py-2 first:bg-blue-500 [:not(:first-child)]:hover:bg-gray-100 first:text-white rounded lg:first:bg-transparent lg:first:text-blue-500 "> <a href="">Home</a></li>
+          <li class="px-3 py-2 first:bg-blue-500 [&:not(:first-child)]:hover:bg-gray-100 first:text-white rounded lg:first:bg-transparent lg:first:text-blue-500 ">  <a href="">About</a></li>
+          <li class="px-3 py-2 first:bg-blue-500 [&:not(:first-child)]:hover:bg-gray-100 first:text-white rounded lg:first:bg-transparent lg:first:text-blue-500 ">  <a href="">Services</a></li>
+          <li class="px-3 py-2 first:bg-blue-500 [&:not(:first-child)]:hover:bg-gray-100 first:text-white rounded lg:first:bg-transparent lg:first:text-blue-500 ">  <a href="">Pricing</a></li>
+          <li class="px-3 py-2 first:bg-blue-500 [&:not(:first-child)]:hover:bg-gray-100 first:text-white rounded lg:first:bg-transparent lg:first:text-blue-500 ">   <a href="">Contact</a></li>
+        </ul>
+      </div>
+
+     <div class="fixed left-4 bottom-4 lg:static">
+       <div class=" rounded-full bg-white  shadow-md h-12 flex-center w-12"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-handbag-icon lucide-handbag"><path d="M2.048 18.566A2 2 0 0 0 4 21h16a2 2 0 0 0 1.952-2.434l-2-9A2 2 0 0 0 18 8H6a2 2 0 0 0-1.952 1.566z"/><path d="M8 11V6a4 4 0 0 1 8 0v5"/></svg></div>
+    </nav>
+<!-- Shoe Section -->
+    <div class="flex flex-col lg:flex-row-reverse ">
+      <div class="flex-1">
+        <img src="Images/n1-min.png" alt="">
+      </div>
+      <div class="flex-1 space-y-6 "> 
+        <div class="font-black text-5xl md:text-9xl">
+          Nike Air Max 270
+        </div>
+        <div class="font-medium md:text-xl">
+          Nike Air Max 270 is a lifestyle shoe that is sure to turn heads with vibrant color gradient.
+        </div>
+        <div class="text-3xl font-extrabold md:text-6xl">100$</div>
+        <div class="space-x-5 sm:space-x-10">
+        <button class="h-14 w-44 bg-black text-white hover:bg-gray-800 active:bg-gray-600">Add to bag</button>
+        <a href="#" class="font-bold underline underline-offset-4 text-lg">View details</a> </div>
+      </div>
+    </div>
+
+ 
+     </div>
+  </div>
+<script>
+let block = document.getElementById('block')
+let hide = document.getElementById('hide')
+
+hide.addEventListener('click', function(){
+  block.classList.toggle('hidden')
+})
+</script>
+
+    <script defer type="module" src="/src/main.js"></script>
+  </body>
+</html>
