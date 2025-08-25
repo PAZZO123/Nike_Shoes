@@ -10,4 +10,28 @@
   .flex-center{
     @apply flex justify-center items-center
   }
+  .btn-anim{
+    @apply  transition active:scale-75 
+  }
+}
+@theme {
+  --animate-pazzo: pazzo 4s ease-in-out infinite;
+  @keyframes pazzo {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+   --animate-fadIn: fadIn 1s ease-in-out ;
+  @keyframes fadIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
 }

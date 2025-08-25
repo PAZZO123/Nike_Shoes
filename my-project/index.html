@@ -8,9 +8,10 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div class=" p-10 lg:px-24"> 
+    <div class=" p-10 lg:px-24 animate-fadIn"> 
       <!-- Navigation Bars -->
-      <nav class="flex justify-between  flex-wrap relative z-10">
+    
+  <nav class="flex justify-between  flex-wrap relative z-10">
       <a href=""><img  class="h-20 w-20" src="Images/nike-logo.svg" alt=""></a>
       <button id="hide" class=" lg:hidden rounded-lg p-2 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg></button>
      <!-- Navigation Links -->
@@ -25,12 +26,12 @@
       </div>
 
      <div class="fixed left-4 bottom-4 lg:static lg:mr-8">
-       <div class=" rounded-full bg-white  shadow-md h-12 flex-center w-12 cursor-pointer "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-handbag-icon lucide-handbag"><path d="M2.048 18.566A2 2 0 0 0 4 21h16a2 2 0 0 0 1.952-2.434l-2-9A2 2 0 0 0 18 8H6a2 2 0 0 0-1.952 1.566z"/><path d="M8 11V6a4 4 0 0 1 8 0v5"/></svg></div>
+       <div class=" rounded-full bg-white  shadow-md h-12 flex-center w-12 cursor-pointer btn-anim"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-handbag-icon lucide-handbag"><path d="M2.048 18.566A2 2 0 0 0 4 21h16a2 2 0 0 0 1.952-2.434l-2-9A2 2 0 0 0 18 8H6a2 2 0 0 0-1.952 1.566z"/><path d="M8 11V6a4 4 0 0 1 8 0v5"/></svg></div>
     </nav>
 <!-- Shoe Section -->
     <div class="flex flex-col lg:flex-row-reverse ">
       <div class="flex-1 lg:-mt-32 lg:ml-28 ">
-       <div class="h-full flex-center bg-gradient-to-br from-[#F637CF] from-5% via-[#E3D876] via-40% to-[#4DD4C6]"> <img src="Images/n1-min.png" alt=""></div>
+       <div class="h-full flex-center bg-gradient-to-br from-[#F637CF] from-5% via-[#E3D876] via-40% to-[#4DD4C6]"> <img class="animate-pazzo" src="Images/n1-min.png" alt=""></div>
       </div>
       <!-- shoes Detail -->
       <div class="flex-1 space-y-6 "> 
@@ -42,28 +43,77 @@
         </div>
         <div class="flex space-x-4">
           <div class="text-3xl font-extrabold md:text-6xl">100$</div>
-        <div class="space-x-4">
-          <select class="w-24  border-2 border-gray-300 appearance-none p-4" name="QTY" id=""> <option value="" selected disabled hidden>QTY</option>
+        <div class="space-x-4 flex ">
+          <div class="relative">
+            <select class="w-24  border-2 border-gray-300 appearance-none p-4" name="QTY" id=""> 
+           <option value="" disabled selected hidden>QTY</option>
           <option value="">41</option>
           <option value="">42</option>
           <option value="">43</option>
           <option value="">44</option>
           <option value="">45</option></select>
-          <select class="w-24  border-2 border-gray-300 p-4 appearance-none" name="SIZE" id="">
-            <option value="" disabled selected hidden>SIZE</option>
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
-          </select>
+          <div class="absolute top-5 right-0  pr-3 pointer-events-none "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></div>
+         </div>
+           <div class="relative">
+            <select class="w-24  border-2 border-gray-300 appearance-none p-4" name="QTY" id=""> 
+           <option value="" disabled selected hidden>SIZE</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option></select>
+          <div class="absolute top-5 right-0  pr-3  pointer-events-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></div>
+         </div>
         </div>
         </div>
         <div class="space-x-5 sm:space-x-10">
-        <button class="h-14 w-44 bg-black text-white hover:bg-gray-800 active:bg-gray-600">Add to bag</button>
+        <button class="btn-anim h-14 w-44 bg-black text-white hover:bg-gray-800 active:bg-gray-600">Add to bag</button>
         <a href="#" class="font-bold underline underline-offset-4 text-lg">View details</a> </div>
       </div>
+      <!-- Card Section -->
+
+     
+
     </div>
+    
+        <div class="mt-20">
+            <div class="flex-center "> 
+        <div class="text-4xl font-extrabold bg-[url('Images/lines.png')] bg-center">NEW ARRIVALS</div> </div>
+
+      <div class="mt-10 grid grid-cols-1 gap-y-24 md:grid-cols-2  gap-x-6 xl:grid-cols-[repeat(3,25%)] justify-between">
+          <div class="bg-yellow-200  transform hover:scale-105 cursor-pointer max-w-xl transition relative">
+        <div class="p-8">
+          <div class="text-2xl font-bold">Nike Air Max 270</div>
+          <div class="underline underline-offset-4 mt-10 font-semibold"> <a href="">SHOP NOW +</a></div>
+        </div>
+        <div><img class="h-40 w-56 absolute top-5 left-[40%]" src="Images/n1-min.png" alt=""></div>
+       </div>
+
+          <div class="bg-blue-200  transform hover:scale-105 cursor-pointer max-w-xl transition relative">
+        <div class="p-8">
+          <div class="text-2xl font-bold">Nike Air Vapor</div>
+          <div class="underline underline-offset-4 mt-10 font-semibold"> <a href="">SHOP NOW +</a></div>
+        </div>
+        <div><img class="h-40 w-56 absolute top-5 left-[40%]" src="Images/n2-min.png" alt=""></div>
+       </div>
+
+          <div class="bg-yellow-100  transform hover:scale-105 cursor-pointer max-w-xl transition relative">
+        <div class="p-8">
+          <div class="text-2xl font-bold">Nike Air Max 2090</div>
+          <div class="underline underline-offset-4 mt-10 font-semibold"> <a href="">SHOP NOW +</a></div>
+        </div>
+        <div><img class="h-40 w-56 absolute top-5 left-[40%]" src="Images/n3-min.png" alt=""></div>
+       </div>
+
+          <div class="bg-red-200  transform hover:scale-105 cursor-pointer max-w-xl transition relative">
+        <div class="p-8">
+          <div class="text-2xl font-bold">Nike Air Max 270</div>
+          <div class="underline underline-offset-4 mt-10 font-semibold"> <a href="">SHOP NOW +</a></div>
+        </div>
+        <div><img class="h-40 w-56 absolute top-5 left-[40%]" src="Images/n4-min.png" alt=""></div>
+       </div>
+      </div>
+       </div>
 
  
      </div>
