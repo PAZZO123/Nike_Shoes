@@ -1,9 +1,15 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
  
 @layer base{
  body {
   font-family: 'Nunito Sans Variable', sans-serif;
 }
+}
+@theme {
+  --color-night-50: #171E2C;   /* light shade */
+  --color-night-500: #0D1120;  /* main shade */
+  --color-night: var(--color-night-500); /* default */
 }
 
 @layer utilities{

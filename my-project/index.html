@@ -8,20 +8,20 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div class=" p-10 lg:px-24 animate-fadIn"> 
+    <div class=" p-10 lg:px-24 animate-fadIn dark:bg-night "> 
       <!-- Navigation Bars -->
     
   <nav class="flex justify-between  flex-wrap relative z-10 ">
-      <a href=""><img  class="h-20 w-20" src="Images/nike-logo.svg" alt=""></a>
-      <button id="hide" class=" lg:hidden rounded-lg p-2 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg></button>
+      <a class="dark:text-white dark:fill-white z-20 -mt-5" href=""><img  class="h-20 w-20 dark:fill-white" src="Images/nike-logo.svg" alt=""></a>
+      <button id="hide" class=" lg:hidden rounded-lg p-2 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 h-10 w-10 z-20"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg></button>
      <!-- Navigation Links -->
-      <div id="block" class="w-full lg:w-auto lg:block hidden">
-        <ul class="bg-gray-50 rounded-lg border border-gray-100 text-lg p-4  flex flex-col lg:flex-row lg:border-none lg:bg-transparent lg:space-x-8 ">
-          <li class="px-3 py-2 first:bg-blue-500 [:not(:first-child)]:hover:bg-gray-100 first:text-white rounded lg:first:bg-transparent lg:first:text-blue-500  lg:hover:text-blue-500 "> <a href="">Home</a></li>
-          <li class="px-3 py-2 first:bg-blue-500 [&:not(:first-child)]:hover:bg-gray-100 first:text-white rounded lg:first:bg-transparent lg:first:text-blue-500  lg:hover:text-blue-500 ">  <a href="">About</a></li>
-          <li class="px-3 py-2 first:bg-blue-500 [&:not(:first-child)]:hover:bg-gray-100 first:text-white rounded lg:first:bg-transparent lg:first:text-blue-500   lg:hover:text-blue-500">  <a href="">Services</a></li>
-          <li class="px-3 py-2 first:bg-blue-500 [&:not(:first-child)]:hover:bg-gray-100 first:text-white rounded lg:first:bg-transparent lg:first:text-blue-500 lg:text-white  lg:hover:text-blue-500 lg:[&:not(:first-child)]:hover:bg-transparent ">   <a href="">Contact</a></li>
-          <li class="px-3 py-2 first:bg-blue-500 [&:not(:first-child)]:hover:bg-gray-100 first:text-white rounded lg:first:bg-transparent lg:first:text-blue-500 lg:text-white  lg:hover:text-blue-500 lg:[&:not(:first-child)]:hover:bg-transparent">  <a href="">Pricing</a></li>
+      <div id="block" class="w-full lg:w-auto lg:block hidden absolute  mt-7 dark:mt-12 dark:text-white">
+        <ul class="bg-gray-50 rounded-lg border border-gray-100 text-lg p-4  flex flex-col lg:flex-row lg:border-none lg:bg-transparent lg:space-x-8  lg:dark:text-white  dark:bg-night">
+          <li class="px-3 py-2 first:bg-blue-500 [:not(:first-child)]:dark:hover:bg-night-50 first:text-white rounded lg:first:bg-transparent lg:first:text-blue-500  lg:hover:text-blue-500 "> <a href="">Home</a></li>
+          <li class="px-3 py-2 first:bg-blue-500  [:not(:first-child)]:dark:hover:bg-night-50 first:text-white rounded lg:first:bg-transparent lg:first:text-blue-500  lg:hover:text-blue-500 ">  <a href="">About</a></li>
+          <li class="px-3 py-2 first:bg-blue-500  [:not(:first-child)]:dark:hover:bg-night-50 first:text-white rounded lg:first:bg-transparent lg:first:text-blue-500   lg:hover:text-blue-500">  <a href="">Services</a></li>
+          <li class="px-3 py-2 first:bg-blue-500  [:not(:first-child)]:dark:hover:bg-night-50 first:text-white rounded lg:first:bg-transparent lg:first:text-blue-500 lg:text-white  lg:hover:text-blue-500 lg:[&:not(:first-child)]:hover:bg-transparent ">   <a href="">Contact</a></li>
+          <li class="px-3 py-2 first:bg-blue-500  [:not(:first-child)]:dark:hover:bg-night-50 first:text-white rounded lg:first:bg-transparent lg:first:text-blue-500 lg:text-white  lg:hover:text-blue-500 lg:[&:not(:first-child)]:hover:bg-transparent">  <a href="">Pricing</a></li>
         </ul>
       </div>
 
@@ -34,7 +34,7 @@
        <div class="h-full flex-center bg-gradient-to-br from-[#F637CF] from-5% via-[#E3D876] via-40% to-[#4DD4C6]"> <img class="animate-pazzo" src="Images/n1-min.png" alt=""></div>
       </div>
       <!-- shoes Detail -->
-      <div class="flex-1 space-y-6 "> 
+      <div class="flex-1 space-y-6  dark:text-white"> 
         <div class="font-black text-5xl md:text-9xl">
           Nike Air Max 270
         </div>
@@ -43,9 +43,9 @@
         </div>
         <div class="flex space-x-4">
           <div class="text-3xl font-extrabold md:text-6xl">100$</div>
-        <div class="space-x-4 flex ">
+        <div class="space-x-4 flex dark:text-black  ">
           <div class="relative">
-            <select class="w-24  border-2 border-gray-300 appearance-none p-4" name="QTY" id=""> 
+            <select class="w-24  border-2 border-gray-300 appearance-none p-4 dark:bg-white" name="QTY" id=""> 
            <option value="" disabled selected hidden>QTY</option>
           <option value="">41</option>
           <option value="">42</option>
@@ -55,7 +55,7 @@
           <div class="absolute top-5 right-0  pr-3 pointer-events-none "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></div>
          </div>
            <div class="relative">
-            <select class="w-24  border-2 border-gray-300 appearance-none p-4" name="QTY" id=""> 
+            <select class="w-24  border-2 border-gray-300 appearance-none p-4 dark:bg-white" name="QTY" id=""> 
            <option value="" disabled selected hidden>SIZE</option>
           <option value="">1</option>
           <option value="">2</option>
@@ -78,7 +78,7 @@
     
         <div class="mt-20">
             <div class="flex-center "> 
-        <div class="text-4xl font-extrabold bg-[url('Images/lines.png')] bg-center">NEW ARRIVALS</div> </div>
+        <div class="text-4xl font-extrabold bg-[url('Images/lines.png')] bg-center dark:text-white">NEW ARRIVALS</div> </div>
 
       <div class="mt-10 grid grid-cols-1 gap-y-24 md:grid-cols-2  gap-x-6 xl:grid-cols-[repeat(3,25%)] justify-between">
           <div class="bg-[#DAFFA2]  transform hover:scale-105 cursor-pointer max-w-xl transition relative">
@@ -118,17 +118,17 @@
  
      </div>
      <!-- Sidebar -->
-      <div id="container" class="fixed h-full w-full  top-0 bg-white right-0 z-50 transition duration-300 md:w-[50%] lg:w-[35%] p-5 overflow-y-auto">
-        <button id="sidebar" class="sidebar absolute right-4 top-4 text-black font-bold p-2">X</button>
+      <div id="container" class="fixed h-full w-full  top-0 bg-white right-0 z-50 transition duration-300 md:w-[50%] lg:w-[35%] p-5 overflow-y-auto  dark:bg-night dark:text-white">
+        <button id="sidebar" class="sidebar absolute right-4 top-4 text-black font-bold p-2 dark:text-white">X</button>
         <div class="mb-10">
           <h2 class="text-2xl font-bold">Cart</h2>
         </div>
-        <div>
+        <div class="space-y-8">
 
-          <div class="hover:bg-[#DAFFA2] cursor-pointer p-2 group">
-              <div class="  flex bg-slate-50 space-x-3 group-hover:bg-[#DAFFA2]">
+          <div class="cursor-pointer p-2 group hover:bg-gray-700   ">
+              <div class="  flex bg-slate-50 dark:bg-transparent space-x-3 group-hover:hover:bg-gray-700 ">
         <div><img class="h-24 " src="Images/n1-min.png" alt=""></div>
-        <div class="space-y-2">
+        <div class="space-y-2 ">
           
           <div class="font-bold">Nike Air Max 270</div>
           <div class="text-gray-400 text-sm"> <a href="">Nike Air Max 270 is a lifestyle shoe that is sure to turn heads with vibrant color gradient.</a></div>
@@ -138,7 +138,7 @@
           <div class="flex justify-between ml-17 md:ml-30">
           <div class="relative">
             <div class="font-bold">QTY</div>
-            <select class="w-24 bg-white border-2 border-gray-300 appearance-none p-4" name="QTY" id=""> 
+            <select class="w-24 bg-white border-2 border-gray-300 appearance-none p-4 dark:bg-transparent" name="QTY" id=""> 
           
           <option value="">41</option>
           <option value="">42</option>
@@ -149,7 +149,7 @@
          </div>
            <div class="relative">
             <div class="font-bold">SIZE</div>
-            <select class="w-24 bg-white  border-2 border-gray-300 appearance-none p-4" name="QTY" id=""> 
+            <select class="w-24 bg-white  border-2 border-gray-300 appearance-none p-4 dark:bg-transparent" name="QTY" id=""> 
            
           <option value="">1</option>
           <option value="">2</option>
@@ -164,8 +164,8 @@
         </div>
 
           
-          <div class="hover:bg-[#DAFFA2] cursor-pointer p-2 group">
-              <div class="  flex bg-slate-50 space-x-3 group-hover:bg-[#DAFFA2]">
+          <div class="hover:bg-gray-700  cursor-pointer  p-2 group">
+              <div class="  flex bg-slate-50 dark:bg-transparent space-x-3 group-hover:hover:bg-gray-700 ">
         <div><img class="h-24 " src="Images/n2-min.png" alt=""></div>
         <div class="space-y-2">
           
@@ -177,7 +177,7 @@
           <div class="flex justify-between ml-17 md:ml-30">
           <div class="relative">
             <div class="font-bold">QTY</div>
-            <select class="w-24 bg-white border-2 border-gray-300 appearance-none p-4" name="QTY" id=""> 
+            <select class="w-24 bg-white border-2 border-gray-300 appearance-none p-4 dark:bg-transparent" name="QTY" id=""> 
           
           <option value="">41</option>
           <option value="">42</option>
@@ -188,7 +188,7 @@
          </div>
            <div class="relative">
             <div class="font-bold">SIZE</div>
-            <select class="w-24 bg-white  border-2 border-gray-300 appearance-none p-4" name="QTY" id=""> 
+            <select class="w-24 bg-white  border-2 border-gray-300 appearance-none p-4 dark:bg-transparent" name="QTY" id=""> 
            
           <option value="">1</option>
           <option value="">2</option>
@@ -203,8 +203,8 @@
         </div>
 
       
-          <div class="hover:bg-[#DAFFA2] cursor-pointer p-2 group">
-              <div class="  flex bg-slate-50 space-x-3 group-hover:bg-[#DAFFA2]">
+          <div class="hover:bg-gray-700  cursor-pointer p-2 group">
+              <div class="  flex bg-slate-50 space-x-3 group-hover:hover:bg-gray-700  dark:bg-transparent">
         <div><img class="h-24 " src="Images/n3-min.png" alt=""></div>
         <div class="space-y-2">
           
@@ -216,7 +216,7 @@
           <div class="flex justify-between ml-17 md:ml-30">
           <div class="relative">
             <div class="font-bold">QTY</div>
-            <select class="w-24 bg-white border-2 border-gray-300 appearance-none p-4" name="QTY" id=""> 
+            <select class="w-24 bg-white border-2 border-gray-300 appearance-none p-4 dark:bg-transparent" name="QTY" id=""> 
           
           <option value="">41</option>
           <option value="">42</option>
@@ -227,7 +227,7 @@
          </div>
            <div class="relative">
             <div class="font-bold">SIZE</div>
-            <select class="w-24 bg-white  border-2 border-gray-300 appearance-none p-4" name="QTY" id=""> 
+            <select class="w-24 bg-white  border-2 border-gray-300 appearance-none p-4 dark:bg-transparent" name="QTY" id=""> 
            
           <option value="">1</option>
           <option value="">2</option>
@@ -242,8 +242,8 @@
         </div>
 
       
-          <div class="hover:bg-[#DAFFA2] cursor-pointer p-2 group">
-              <div class="  flex bg-slate-50 space-x-3 group-hover:bg-[#DAFFA2]">
+          <div class="hover:bg-gray-700  cursor-pointer p-2 group">
+              <div class="  flex bg-slate-50 space-x-3 hover:bg-gray-700  dark:bg-transparent">
         <div><img class="h-24 " src="Images/n4-min.png" alt=""></div>
         <div class="space-y-2">
           
@@ -255,7 +255,7 @@
           <div class="flex justify-between  ml-17 md:ml-30">
           <div class="relative">
             <div class="font-bold">QTY</div>
-            <select class="w-24 bg-white border-2 border-gray-300 appearance-none p-4" name="QTY" id=""> 
+            <select class="w-24 bg-white border-2 border-gray-300 appearance-none p-4 dark:bg-transparent" name="QTY" id=""> 
           
           <option value="">41</option>
           <option value="">42</option>
@@ -266,7 +266,7 @@
          </div>
            <div class="relative">
             <div class="font-bold">SIZE</div>
-            <select class="w-24 bg-white  border-2 border-gray-300 appearance-none p-4" name="QTY" id=""> 
+            <select class="w-24 bg-white  border-2 border-gray-300 appearance-none p-4 dark:bg-transparent" name="QTY" id=""> 
            
           <option value="">1</option>
           <option value="">2</option>
@@ -282,9 +282,18 @@
 
        </div>
         </div>
+
+        <div class="fixed bottom-4 right-4 bg-night-50 px-4 py-2 rounded-full text-white dark:bg-white dark:text-night">
+          <button onclick="toggleDark()" class="hidden dark:block"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-icon lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></button>
+          <button onclick="toggleDark()"  class="inline dark:hidden "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-icon lucide-moon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg></button>
+
+        </div>
       </div>
   </div>
 <script>
+  function toggleDark(){
+    window.document.documentElement.classList.toggle('dark')
+  }
 let block = document.getElementById('block')
 let hide = document.getElementById('hide')
 let x=document.getElementById('sidebar')
